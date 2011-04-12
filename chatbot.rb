@@ -17,4 +17,7 @@ What game would you like to play? I know:
 4. Falkin's Maze
 5. Global Thermonuclear War
   eod
+else
+  puts "OK, goodbye."
+  exit
 end

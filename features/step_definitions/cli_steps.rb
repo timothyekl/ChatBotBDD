@@ -23,6 +23,10 @@ Then /^I should see:$/ do |string|
   assert_partial_output(string)
 end
 
+@announce
 Then /^the program should quit$/ do
-  assert_exiting_with(expect_to_pass)
+  #assert_passing_with("")
+  #puts @interactive.methods.sort#.should == 0
+  #puts @interactive.exit_code
+  @interactive.stop.should == 0
 end
