@@ -1,0 +1,9 @@
+ChatBotBDD is an extremely basic interactive command-line
+application in Ruby, developed using behavior-driven
+principles with Cucumber and Aruba. The goal is to showcase
+the process of using BDD with simple Ruby command-line
+applications.
+
+The application should have no requirements outside Ruby
+itself; running the tests will require Ruby Gems, Cucumber,
+and Aruba. Everything was written and tested with Ruby 1.8.7.
