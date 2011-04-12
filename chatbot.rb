@@ -16,8 +16,18 @@ What game would you like to play? I know:
 3. Poker
 4. Falkin's Maze
 5. Global Thermonuclear War
+Pick a game by number.
   eod
+
+  number = gets.chomp.to_i
+
+  if number == 5
+    puts "BOOM!"
+  else
+    puts "That game is boring."
+  end
 else
   puts "OK, goodbye."
-  exit
 end
+
+exit
