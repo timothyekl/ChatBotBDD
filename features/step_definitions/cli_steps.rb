@@ -23,10 +23,11 @@ Then /^I should see:$/ do |string|
   assert_partial_output(string)
 end
 
-@announce
 Then /^the program should quit$/ do
-  #assert_passing_with("")
-  #puts @interactive.methods.sort#.should == 0
-  #puts @interactive.exit_code
   @interactive.stop.should == 0
+end
+
+When /^I type an integer between "([^""]*)" and "([^""]*)" inclusive$/ do |arg1, arg2|
+  a = Array(arg1.to_i.upto(arg2.to_i))
+  type(a[rand(a.size)].to_s)
 end
